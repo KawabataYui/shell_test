@@ -1,5 +1,5 @@
 #出力ファイル
-$outFile="shell_test2.csv"
+$outFile="C:\shell_test"
 
 #出力オブジェクトを格納する配列（初期値＝空の配列）
 $outRecords=@()
@@ -24,3 +24,6 @@ $csv += "$($outRecord.OUT_003),"
 $csv += "$($outRecord.OUT_004),"
 $csv += "$($outRecord.OUT_005)"
 $csv | Out-File $outFile -encoding UTF8 -append
+
+echo "OK"
+pause
